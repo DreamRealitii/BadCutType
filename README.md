@@ -5,6 +5,6 @@ What the mod does:
 - The bad cut types (according to Beat Saber code): WrongDirection, WrongColor, TooSoon, and CutHarder.
 
 To do list:
-- Add an enable/disable setting.
+- Add an in-game enable/disable setting.
 - Let players choose the color of the bad cut text.
 - Other langwages besuides Engwish owo?
