@@ -7,4 +7,4 @@ What the mod does:
 To do list:
 - Add an enable/disable setting.
 - Let players choose the color of the bad cut text.
-- Other langwages besides Engwish owo?
+- Other langwages besuides Engwish owo?
