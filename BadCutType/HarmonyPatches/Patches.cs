@@ -1,9 +1,9 @@
 ﻿using HarmonyLib;
 using IPA.Utilities;
-using TMPro;
 using UnityEngine;
 using Zenject;
 
+//Thanks CustomMissText for doing all the thinking for me.
 namespace BadCutType.HarmonyPatches
 {
     [HarmonyPatch(typeof(BadNoteCutEffectSpawner), nameof(BadNoteCutEffectSpawner.HandleNoteWasCut), MethodType.Normal)]
