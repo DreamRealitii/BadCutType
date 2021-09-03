@@ -7,4 +7,4 @@ What the mod does:
 To do list:
 - Add an in-game enable/disable setting.
 - Let players choose the color of the bad cut text.
-- Other langwages besuides Engwish owo?
+- Other languages?
