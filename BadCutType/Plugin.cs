@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
+﻿using System.Reflection;
 using BeatSaberMarkupLanguage.Settings;
 using IPA;
 using IPA.Config;
 using IPA.Config.Stores;
 using BadCutType.Configuration;
-using UnityEngine.SceneManagement;
-using UnityEngine;
 using HarmonyLib;
 using IPALogger = IPA.Logging.Logger;
 
@@ -60,7 +54,7 @@ namespace BadCutType
             Log.Debug("OnApplicationQuit");
         }
 
-        //Convert a FailReason into a single word to display in-game.
+        //Convert a FailReason into a string to display in-game.
         public static string FailText(NoteCutInfo.FailReason reason) {
             switch (reason) {
                 case NoteCutInfo.FailReason.WrongDirection: return PluginConfig.Instance.directionFail;
