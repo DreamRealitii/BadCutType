@@ -11,7 +11,7 @@ Quick install:
 
 Source code install:
 - Step 1: Download source code from release.
-- Step 2: Create project file `BadCutType/BadCutType.csproj.user` with the text below, but replace BeatSaberDir with your own Beat Saber directory.
+- Step 2: Create project file `BadCutType/BadCutType.csproj.user` with the text below, but replace BeatSaberDir and ReferencePath with your own Beat Saber directories.
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <Project>
