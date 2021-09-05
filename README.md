@@ -1,9 +1,24 @@
 # BadCutType
 What the mod does:
 - When you get a bad cut, replace the "x" with text of the bad cut reason.
-- There are apparently four bad cut reasons. I thought there were only two.
-- The bad cut types (according to Beat Saber code): WrongDirection, WrongColor, TooSoon, and CutHarder.
 - Has settings to enable/disable, change font size/color, write your own text for each bad cut type.
 
-To do list:
+Possible improvements:
 - Other languages besides English? I don't know them.
+
+Quick install:
+- Step 1: Copy .dll file from release into Beat Saber Plugins folder.
+
+Source code install:
+- Step 1: Download source code from release.
+- Step 2: Create project file `BadCutType/BadCutType.csproj.user` with the text below, but replace BeatSaberDir with your own Beat Saber directory.
+```
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <BeatSaberDir>C:\Program Files (x86)\Steam\steamapps\common\Beat Saber</BeatSaberDir>
+    <ReferencePath>C:\Program Files (x86)\Steam\steamapps\common\Beat Saber\Beat Saber_Data\Managed;C:\Program Files (x86)\Steam\steamapps\common\Beat Saber\Libs;C:\Program Files (x86)\Steam\steamapps\common\Beat Saber\Plugins</ReferencePath>
+  </PropertyGroup>
+</Project>
+```
+- Step 3: Open BadCutType.sln in Visual Studio and build solution.
