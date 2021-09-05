@@ -1,0 +1,50 @@
+﻿<bg xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='https://monkeymanboy.github.io/BSML-Docs/ https://raw.githubusercontent.com/monkeymanboy/BSML-Docs/gh-pages/BSMLSchema.xsd'>
+  <settings-container>
+    
+    <horizontal horizontal-fit="PreferredSize">
+      <text text='Bad Cut Settings' align='Center'/>
+    </horizontal>
+    
+    <horizontal horizontal-fit="PreferredSize">
+      <checkbox-setting apply-on-change="true" value="isEnabled" text="Enable"
+              hover-hint="Turn this mod on or off."
+						/>
+    </horizontal>
+    <horizontal horizontal-fit="PreferredSize">
+      <color-setting apply-on-change="true" value="textColor" text="Text Color"
+              hover-hint="The color of bad cut text."
+						/>
+    </horizontal>
+    <horizontal horizontal-fit="PreferredSize">
+      <increment-setting apply-on-change="true" value="textSize" text="Text Size" min='0.5' max='5' increment='0.5'
+              hover-hint="The size of bad cut text (Miss text is 3.0)."
+						/>
+    </horizontal>
+    
+    <horizontal horizontal-fit="PreferredSize">
+      <text text='Bad Cut Text' align='Center'/>
+    </horizontal>
+    
+    <horizontal horizontal-fit="PreferredSize">
+      <string-setting apply-on-change="true" value="directionFail" text="WrongDirection Text"
+              hover-hint="When you hit a note in the wrong direction."
+						/>
+    </horizontal>
+    <horizontal horizontal-fit="PreferredSize">
+      <string-setting apply-on-change="true" value="colorFail" text="WrongColor Text"
+              hover-hint="When you hit a note with the wrong saber."
+						/>
+    </horizontal>
+    <horizontal horizontal-fit="PreferredSize">
+      <string-setting apply-on-change="true" value="timingFail" text="TooSoon Text"
+              hover-hint="Tell me if you actually get this."
+						/>
+    </horizontal>
+    <horizontal horizontal-fit="PreferredSize">
+      <string-setting apply-on-change="true" value="swingFail" text="CutHarder Text"
+              hover-hint="Tell me if you actually get this."
+						/>
+      
+    </horizontal>
+  </settings-container>
+</bg>

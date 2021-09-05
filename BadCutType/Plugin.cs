@@ -3,9 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using BeatSaberMarkupLanguage.Settings;
 using IPA;
 using IPA.Config;
 using IPA.Config.Stores;
+using BadCutType.Configuration;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 using HarmonyLib;
@@ -34,11 +36,14 @@ namespace BadCutType
             Log.Info("BadCutType initialized.");
         }
 
+        #region BSIPA Config
         [Init]
         public void InitWithConfig(Config conf) {
-            Configuration.PluginConfig.Instance = conf.Generated<Configuration.PluginConfig>();
+            PluginConfig.Instance = conf.Generated<PluginConfig>();
+            BSMLSettings.instance.AddSettingsMenu("Bad Cut Type", "BadCutType.Views.settings.bsml", Configuration.PluginConfig.Instance);
             Log.Debug("Config loaded");
         }
+        #endregion
 
         [OnStart]
         public void OnApplicationStart()
@@ -55,12 +60,13 @@ namespace BadCutType
             Log.Debug("OnApplicationQuit");
         }
 
+        //Convert a FailReason into a single word to display in-game.
         public static string FailText(NoteCutInfo.FailReason reason) {
             switch (reason) {
-                case NoteCutInfo.FailReason.WrongDirection: return "Direction";
-                case NoteCutInfo.FailReason.WrongColor: return "Color";
-                case NoteCutInfo.FailReason.TooSoon: return "Timing";
-                case NoteCutInfo.FailReason.CutHarder: return "Swing";
+                case NoteCutInfo.FailReason.WrongDirection: return PluginConfig.Instance.directionFail;
+                case NoteCutInfo.FailReason.WrongColor: return PluginConfig.Instance.colorFail;
+                case NoteCutInfo.FailReason.TooSoon: return PluginConfig.Instance.timingFail;
+                case NoteCutInfo.FailReason.CutHarder: return PluginConfig.Instance.swingFail;
                 default: return "None";
             }
         }

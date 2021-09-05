@@ -2,14 +2,14 @@
 using IPA.Utilities;
 using UnityEngine;
 using Zenject;
+using BadCutType.Configuration;
 
-//Thanks CustomMissText for doing all the thinking for me.
+//Thanks CustomMissText for doing all the hard coding (_spawnerBase.get) for me.
 namespace BadCutType.HarmonyPatches
 {
     [HarmonyPatch(typeof(BadNoteCutEffectSpawner), nameof(BadNoteCutEffectSpawner.HandleNoteWasCut), MethodType.Normal)]
     internal class BadCutTextSpawner_HandleNoteWasMissed
     {
-        public static bool inMethod = false;
         static FlyingTextSpawner _spawner;
         static FlyingTextSpawner _spawnerBase
         {
@@ -31,8 +31,8 @@ namespace BadCutType.HarmonyPatches
                             break;
                         }
                     }
-                    _spawner.SetField("_fontSize", 2f);
-                    _spawner.SetField("_color", Color.red);
+                    _spawner.SetField("_fontSize", PluginConfig.Instance.textSize);
+                    _spawner.SetField("_color", PluginConfig.Instance.textColor);
 
                     return _spawner;
                 }
@@ -46,9 +46,11 @@ namespace BadCutType.HarmonyPatches
                 Plugin.Log.Error("Failed to inject FlyingTextSpawner!");
                 return true;
             }
-            if (Configuration.PluginConfig.Instance.isEnabled && !noteCutInfo.allIsOK)
-                _spawner.SpawnText(noteCutInfo.cutPoint, noteController.worldRotation, noteController.inverseWorldRotation, Plugin.FailText(noteCutInfo.failReason));
-            return false;
+            //My code that generates bad cut text.
+            if (PluginConfig.Instance.isEnabled && !noteCutInfo.allIsOK)
+                _spawner.SpawnText(noteCutInfo.cutPoint, noteController.worldRotation, noteController.inverseWorldRotation,
+                    Plugin.FailText(noteCutInfo.failReason));
+            return !PluginConfig.Instance.isEnabled;
         }
     }
 }

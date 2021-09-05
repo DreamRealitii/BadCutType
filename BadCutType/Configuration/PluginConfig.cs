@@ -1,6 +1,6 @@
-﻿
-using System.Runtime.CompilerServices;
+﻿using System.Runtime.CompilerServices;
 using IPA.Config.Stores;
+using UnityEngine;
 
 [assembly: InternalsVisibleTo(GeneratedStore.AssemblyVisibilityTarget)]
 namespace BadCutType.Configuration
@@ -9,6 +9,12 @@ namespace BadCutType.Configuration
     {
         public static PluginConfig Instance { get; set; }
         public virtual bool isEnabled { get; set; } = true;
+        public virtual Color textColor { get; set; } = Color.red;
+        public virtual float textSize { get; set; } = 3f;
+        public virtual string directionFail { get; set; } = "Direction";
+        public virtual string colorFail { get; set; } = "Color";
+        public virtual string timingFail { get; set; } = "Timing";
+        public virtual string swingFail { get; set; } = "Swing";
 
         /// <summary>
         /// This is called whenever BSIPA reads the config from disk (including when file changes are detected).
@@ -23,7 +29,7 @@ namespace BadCutType.Configuration
         /// </summary>
         public virtual void Changed()
         {
-            // Do stuff when the config is changed.
+            
         }
 
         /// <summary>
