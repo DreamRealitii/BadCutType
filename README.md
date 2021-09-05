@@ -5,8 +5,5 @@ What the mod does:
 - The bad cut types (according to Beat Saber code): WrongDirection, WrongColor, TooSoon, and CutHarder.
 - Has settings to enable/disable, change font size/color, write your own text for each bad cut type.
 
-Issues:
-- Sometimes displays a bad cut message in replays, even when the cut isn't bad.
-
 To do list:
-- Other languages?
+- Other languages besides English? I don't know them.
