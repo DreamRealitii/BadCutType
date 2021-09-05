@@ -7,7 +7,7 @@ Possible improvements:
 - Other languages besides English? I don't know them.
 
 Quick install:
-- Step 1: Copy .dll file from release (once I get releases to actually work) into Beat Saber Plugins folder.
+- Step 1: Copy .dll file from release into Beat Saber Plugins folder.
 
 Source code install:
 - Step 1: Download source code from GitHub code button.
