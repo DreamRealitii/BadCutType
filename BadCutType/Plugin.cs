@@ -34,17 +34,11 @@ namespace BadCutType
             Log.Info("BadCutType initialized.");
         }
 
-        #region BSIPA Config
-        //Uncomment to use BSIPA's config
-        /*
         [Init]
-        public void InitWithConfig(Config conf)
-        {
+        public void InitWithConfig(Config conf) {
             Configuration.PluginConfig.Instance = conf.Generated<Configuration.PluginConfig>();
             Log.Debug("Config loaded");
         }
-        */
-        #endregion
 
         [OnStart]
         public void OnApplicationStart()

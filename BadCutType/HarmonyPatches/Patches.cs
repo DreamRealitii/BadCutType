@@ -46,7 +46,7 @@ namespace BadCutType.HarmonyPatches
                 Plugin.Log.Error("Failed to inject FlyingTextSpawner!");
                 return true;
             }
-            if (!noteCutInfo.failReason.Equals(NoteCutInfo.FailReason.None))
+            if (Configuration.PluginConfig.Instance.isEnabled && !noteCutInfo.allIsOK)
                 _spawner.SpawnText(noteCutInfo.cutPoint, noteController.worldRotation, noteController.inverseWorldRotation, Plugin.FailText(noteCutInfo.failReason));
             return false;
         }
