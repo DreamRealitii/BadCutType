@@ -1,13 +1,9 @@
 # BadCutType
 What the mod does:
-- When you get a bad cut, replace the "x" with red text of the bad cut reason.
-- There are apparently four reasons. I thought there were only two.
+- When you get a bad cut, replace the "x" with text of the bad cut reason.
+- There are apparently four bad cut reasons. I thought there were only two.
 - The bad cut types (according to Beat Saber code): WrongDirection, WrongColor, TooSoon, and CutHarder.
-
-Issues:
-- Sometimes displays WrongDirection message in replays, even when the cut isn't bad.
+- Has settings to enable/disable, change font size/color, write your own text for each bad cut type.
 
 To do list:
-- Add an in-game enable/disable setting.
-- Let players choose the color of the bad cut text.
-- Other languages?
+- Other languages besides English? I don't know them.
