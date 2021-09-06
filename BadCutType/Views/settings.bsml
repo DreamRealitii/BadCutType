@@ -36,15 +36,20 @@
 						/>
     </horizontal>
     <horizontal horizontal-fit="PreferredSize">
+      <string-setting apply-on-change="true" value="bombFail" text="BombHit Text"
+              hover-hint="When you hit a bomb."
+						/>
+    </horizontal>
+    <horizontal horizontal-fit="PreferredSize">
       <string-setting apply-on-change="true" value="timingFail" text="TooSoon Text"
-              hover-hint="Tell me if you actually get this."
+              hover-hint="Tell me if you somehow get this."
 						/>
     </horizontal>
     <horizontal horizontal-fit="PreferredSize">
       <string-setting apply-on-change="true" value="swingFail" text="CutHarder Text"
-              hover-hint="Tell me if you actually get this."
+              hover-hint="Tell me if you somehow get this."
 						/>
-      
     </horizontal>
+    
   </settings-container>
 </bg>

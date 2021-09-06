@@ -15,6 +15,7 @@ namespace BadCutType.Configuration
         public virtual string colorFail { get; set; } = "Color";
         public virtual string timingFail { get; set; } = "Timing";
         public virtual string swingFail { get; set; } = "Swing";
+        public virtual string bombFail { get; set; } = "Bomb";
 
         /// <summary>
         /// This is called whenever BSIPA reads the config from disk (including when file changes are detected).

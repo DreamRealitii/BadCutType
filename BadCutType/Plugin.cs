@@ -55,7 +55,9 @@ namespace BadCutType
         }
 
         //Convert a FailReason into a string to display in-game.
-        public static string FailText(NoteCutInfo.FailReason reason) {
+        public static string FailText(NoteCutInfo.FailReason reason, NoteController note) {
+            if (note.noteData.colorType.Equals(ColorType.None))
+                return PluginConfig.Instance.bombFail;
             switch (reason) {
                 case NoteCutInfo.FailReason.WrongDirection: return PluginConfig.Instance.directionFail;
                 case NoteCutInfo.FailReason.WrongColor: return PluginConfig.Instance.colorFail;

@@ -49,7 +49,7 @@ namespace BadCutType.HarmonyPatches
             //My code that generates bad cut text.
             if (PluginConfig.Instance.isEnabled && !noteCutInfo.allIsOK)
                 _spawner.SpawnText(noteCutInfo.cutPoint, noteController.worldRotation, noteController.inverseWorldRotation,
-                    Plugin.FailText(noteCutInfo.failReason));
+                    Plugin.FailText(noteCutInfo.failReason, noteController));
             return !PluginConfig.Instance.isEnabled;
         }
     }
