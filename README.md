@@ -4,7 +4,7 @@ What the mod does:
 - Has settings to enable/disable, change font size/color, write your own text for each bad cut type.
 
 1.0.0 Issues:
-- Hitting a bomb gives WrongColor text.
+- Hitting a bomb gives WrongColor text. Update to add new BombHit text.
 
 Possible improvements:
 - Other languages besides English? I don't know them.
