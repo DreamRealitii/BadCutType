@@ -7,6 +7,7 @@ What the mod does:
 - Hitting a bomb gives WrongColor text. Update to 1.1.0 add new BombHit text.
 
 Possible improvements:
+- Give different text for the two colors of WrongColor cuts.
 - Other languages besides English? I don't know them.
 
 Quick install:
