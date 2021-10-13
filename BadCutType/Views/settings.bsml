@@ -31,8 +31,13 @@
 						/>
     </horizontal>
     <horizontal horizontal-fit="PreferredSize">
-      <string-setting apply-on-change="true" value="colorFail" text="WrongColor Text"
-              hover-hint="When you hit a note with the wrong saber."
+      <string-setting apply-on-change="true" value="colorLeftFail" text="WrongColor (Left) Text"
+              hover-hint="When you hit a left-hand note with the right-hand saber."
+						/>
+    </horizontal>
+    <horizontal horizontal-fit="PreferredSize">
+      <string-setting apply-on-change="true" value="colorRightFail" text="WrongColor (Right) Text"
+              hover-hint="When you hit a right-hand note with the left-hand saber."
 						/>
     </horizontal>
     <horizontal horizontal-fit="PreferredSize">
@@ -41,12 +46,12 @@
 						/>
     </horizontal>
     <horizontal horizontal-fit="PreferredSize">
-      <string-setting apply-on-change="true" value="timingFail" text="TooSoon Text"
-              hover-hint="Tell me if you somehow get this."
+      <string-setting apply-on-change="true" value="swingFail" text="CutHarder Text"
+              hover-hint="I've only seen one person swing slow enough to get this."
 						/>
     </horizontal>
     <horizontal horizontal-fit="PreferredSize">
-      <string-setting apply-on-change="true" value="swingFail" text="CutHarder Text"
+      <string-setting apply-on-change="true" value="timingFail" text="TooSoon Text"
               hover-hint="Tell me if you somehow get this."
 						/>
     </horizontal>

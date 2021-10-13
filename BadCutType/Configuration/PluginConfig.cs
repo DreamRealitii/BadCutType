@@ -12,7 +12,8 @@ namespace BadCutType.Configuration
         public virtual Color textColor { get; set; } = Color.red;
         public virtual float textSize { get; set; } = 3f;
         public virtual string directionFail { get; set; } = "Direction";
-        public virtual string colorFail { get; set; } = "Color";
+        public virtual string colorLeftFail { get; set; } = "Right Hand";
+        public virtual string colorRightFail { get; set; } = "Left Hand";
         public virtual string timingFail { get; set; } = "Timing";
         public virtual string swingFail { get; set; } = "Swing";
         public virtual string bombFail { get; set; } = "Bomb";
