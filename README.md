@@ -1,17 +1,10 @@
 # BadCutType
 What the mod does:
-- When you get a bad cut or hit a bomb, replace the "x" with text of the bad cut reason.
+- When you get a bad cut, replace the "x" with text of the bad cut reason.
 - Has settings to enable/disable, change font size/color, write your own text for each bad cut type.
 
-1.0.0 Issues:
-- Hitting a bomb gives WrongColor text. Update to 1.1.0 add new BombHit text.
-
-Possible improvements:
-- Give different text for the two colors of WrongColor cuts.
-- Other languages besides English? I don't know them.
-
 Quick install:
-- Step 1: Copy .dll file from release into Beat Saber Plugins folder.
+- Use ModAssistant, or copy .dll file from release into Beat Saber Plugins folder.
 
 Source code install:
 - Step 1: Download source code from release or GitHub code button.
