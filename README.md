@@ -3,6 +3,9 @@ What the mod does:
 - When you get a bad cut, replace the "x" with text of the bad cut reason.
 - Has settings to enable/disable, change font size/color, write your own text for each bad cut type.
 
+Possible Issues:
+- I don't hit bombs often enough to know for sure, but it might be displaying the "CutHarder" text instead of the "BombHit" text.
+
 Quick install:
 - Use ModAssistant, or copy .dll file from release into Beat Saber Plugins folder.
 
