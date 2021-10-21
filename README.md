@@ -3,6 +3,9 @@ What the mod does:
 - When you get a bad cut, replace the "x" with text of the bad cut reason.
 - Has settings to enable/disable, change font size/color, write your own text for each bad cut type.
 
+Next thing to do:
+- Display text when you lose your combo to a wall.
+
 Issues:
 - In replays, sometimes displays bad cut text when the player didn't do anything wrong, and uses the wrong text for bomb hits.
 
