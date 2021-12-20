@@ -7,7 +7,7 @@ Next thing to do:
 - Display text when you lose your combo to a wall.
 
 Issues:
-- In replays, sometimes displays bad cut text when the player didn't do anything wrong, and uses the wrong text for bomb hits.
+- When watching replays, sometimes displays bad cut text when the player didn't do anything wrong, and uses the wrong text for bomb hits. My theory is different grip settings between players.
 
 Quick install:
 - Use ModAssistant, or copy .dll file from release into Beat Saber Plugins folder.
